@@ -1,0 +1,81 @@
+
+// brand colors
+$brandRed: #007dc6;
+$darkBlue: #0c3d66;
+$turquoise: #687a89;
+
+// breakpoints
+$mob-sm: 320px;
+$mob-md: 480px;
+$mob-lg: 768px;
+$desk-sm: 880px;
+$desk-lg: 960px;
+$desk-xl: 1120px;
+$desk-xxl: 1660px;
+
+// z-index
+$elements: divider, results, options;
+
+
+// base font size
+@function em($target, $context: 12) {
+  @return ($target / $context) * 1em;
+}
+
+// border radius
+@mixin border-radius($radius) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin border-top-left-radius($radius) {
+	-moz-border-radius-topleft: $radius;
+	-webkit-border-top-left-radius: $radius;
+	border-top-left-radius: $radius;
+}
+@mixin border-bottom-left-radius($radius) {
+	-moz-border-radius-bottomleft: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+// bg image
+@mixin background-image($image-1) {
+  background-image: $image-1;
+}
+
+
+@mixin gotham() {
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+// rem/px
+@mixin font-size($size, $is-important: false) {
+	$size: if(unitless($size), $size, $size / 1px);
+
+	@if $is-important {
+		font-size: $size + px !important;
+		font-size: ($size / strip-units(14)) + rem !important;
+	} @else {
+		font-size: $size + px;
+		font-size: ($size / strip-units(14)) + rem;
+	}
+}
+
+// Strip out units to do math functions.
+@function strip-units($number) {
+	@return $number / ($number * 0 + 1);
+}
+
+/*
+base font size
+ */
+@function em($target, $context: 12) {
+  @return ($target / $context) * 1em;
+}

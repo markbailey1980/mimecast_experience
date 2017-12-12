@@ -1,0 +1,905 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: 400;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro/SourceSansPro-Light.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-Light.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Source Sans Pro Light Italic';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro/SourceSansPro-LightIt.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-LightIt.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-Regular.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Source Sans Pro Italic';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro/SourceSansPro-It.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-It.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Source Sans Pro Semibold';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro/SourceSansPro-Semibold.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-Semibold.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Source Sans Pro Semibold Italic';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro/SourceSansPro-SemiboldIt.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-SemiboldIt.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-Bold.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Source Sans Pro Bold Italic';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro/SourceSansPro-BoldIt.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-BoldIt.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Source Sans Pro Black';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro/SourceSansPro-Black.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-Black.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Source Sans Pro Black Italic';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SourceSansPro/SourceSansPro-BlackIt.woff") format("woff"), url("../fonts/SourceSansPro/SourceSansPro-BlackIt.woff2") format("woff2"); }
+/*
+base font size
+ */
+body {
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.42857;
+  color: #000;
+  background-color: transparent; }
+
+@keyframes rota {
+  to {
+    transform: rotate(360deg); } }
+.wrapper {
+  overflow: hidden; }
+
+.guided .torso.marketo.form .hero {
+  height: 70px;
+  background-image: none;
+  line-height: 1; }
+  @media (min-width: 768px) {
+    .guided .torso.marketo.form .hero {
+      height: 100px; } }
+  .guided .torso.marketo.form .hero .container,
+  .guided .torso.marketo.form .hero .logo {
+    height: inherit; }
+  .guided .torso.marketo.form .hero img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.add-mimecast .torso.marketo.form .clear {
+  clear: both; }
+.add-mimecast .torso.marketo.form .top-banner {
+  position: relative;
+  min-height: 480px;
+  background-image: url(../img/swirl.jpg);
+  background-position: center 60%;
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    .add-mimecast .torso.marketo.form .top-banner {
+      background-image: url(../img/swirl2x.jpg); } }
+  @media (min-width: 768px) {
+    .add-mimecast .torso.marketo.form .top-banner {
+      background-size: auto 120%; } }
+  @media (min-width: 1120px) {
+    .add-mimecast .torso.marketo.form .top-banner {
+      background-position: center 60%; } }
+  @media (min-width: 1400px) {
+    .add-mimecast .torso.marketo.form .top-banner {
+      background-size: cover; } }
+  @media (min-width: 1660px) {
+    .add-mimecast .torso.marketo.form .top-banner {
+      background-position: center 58%; } }
+  .add-mimecast .torso.marketo.form .top-banner:before {
+    content: '';
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out; }
+  .add-mimecast .torso.marketo.form .top-banner.background:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); }
+  .add-mimecast .torso.marketo.form .top-banner .container {
+    min-height: inherit;
+    padding-right: 0;
+    padding-left: 0; }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .top-banner .container {
+        padding-right: 16px;
+        padding-left: 16px; } }
+.add-mimecast .torso.marketo.form .experience-container {
+  position: relative;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto;
+  min-height: inherit;
+  margin: 0; }
+  @media (min-width: 768px) {
+    .add-mimecast .torso.marketo.form .experience-container {
+      overflow: visible;
+      height: 650px;
+      margin: 0 0 0 0; } }
+  @media (min-width: 960px) {
+    .add-mimecast .torso.marketo.form .experience-container {
+      height: 700px; } }
+  .add-mimecast .torso.marketo.form .experience-container h1 {
+    margin: 0;
+    padding: 20px 15px 10px;
+    color: #fff;
+    font-family: 'Source Sans Pro Bold Italic', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 1.1;
+    text-align: center !important;
+    text-transform: none; }
+    @media (min-width: 480px) {
+      .add-mimecast .torso.marketo.form .experience-container h1 {
+        font-size: 32px; } }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container h1 {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 54px;
+        line-height: 1;
+        text-align: left; } }
+    @media (min-width: 960px) {
+      .add-mimecast .torso.marketo.form .experience-container h1 {
+        font-size: 58px; } }
+  .add-mimecast .torso.marketo.form .experience-container h2 {
+    padding: 0 15px 22px;
+    color: #fff;
+    font-family: 'Source Sans Pro Light', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center !important;
+    text-transform: none; }
+    @media (min-width: 480px) {
+      .add-mimecast .torso.marketo.form .experience-container h2 {
+        font-size: 17px; } }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container h2 {
+        position: absolute;
+        top: 105px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 22px;
+        line-height: 1;
+        text-align: left; } }
+    @media (min-width: 960px) {
+      .add-mimecast .torso.marketo.form .experience-container h2 {
+        font-size: 24px; } }
+  .add-mimecast .torso.marketo.form .experience-container h1,
+  .add-mimecast .torso.marketo.form .experience-container h2 {
+    width: 100%;
+    text-align: left; }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container h1,
+      .add-mimecast .torso.marketo.form .experience-container h2 {
+        text-align: center;
+        -webkit-transition: all .25s ease-out;
+        transition: all .25s ease-out; } }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container h1.fade-opacity,
+      .add-mimecast .torso.marketo.form .experience-container h2.fade-opacity {
+        opacity: 0; } }
+  .add-mimecast .torso.marketo.form .experience-container .btn {
+    position: relative;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0 0;
+    padding: 0 35px 0 20px;
+    border-radius: 4px;
+    background-color: #0c3d66;
+    color: #fff;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-shadow: none;
+    cursor: pointer; }
+    @media (min-width: 480px) {
+      .add-mimecast .torso.marketo.form .experience-container .btn {
+        font-size: 14px; } }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container .btn {
+        width: auto;
+        margin: 0;
+        text-align: left; } }
+    @media (min-width: 1120px) {
+      .add-mimecast .torso.marketo.form .experience-container .btn {
+        font-size: 16px; } }
+    .add-mimecast .torso.marketo.form .experience-container .btn:hover {
+      color: #fff; }
+    .add-mimecast .torso.marketo.form .experience-container .btn.next {
+      width: calc(100% - 16px);
+      border-radius: 4px 0 0 4px;
+      background-color: #687a89;
+      text-indent: 16px; }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .btn.next {
+          width: auto;
+          margin: 0 16px 0 10px;
+          padding: 0 8px 0 20px;
+          text-indent: 0; } }
+      .add-mimecast .torso.marketo.form .experience-container .btn.next:after {
+        content: '';
+        position: absolute;
+        right: -16px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 16px solid #687a89; }
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          .add-mimecast .torso.marketo.form .experience-container .btn.next:after {
+            right: -15px; } }
+    .add-mimecast .torso.marketo.form .experience-container .btn span {
+      position: relative; }
+      .add-mimecast .torso.marketo.form .experience-container .btn span:before, .add-mimecast .torso.marketo.form .experience-container .btn span:after {
+        content: '';
+        position: absolute;
+        right: -18px;
+        width: 8px;
+        height: 3px;
+        background-color: #fff; }
+      .add-mimecast .torso.marketo.form .experience-container .btn span:before {
+        top: 5px;
+        transform: rotate(45deg); }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .btn span:before {
+            top: 7px; } }
+      .add-mimecast .torso.marketo.form .experience-container .btn span:after {
+        top: 9px;
+        transform: rotate(135deg); }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .btn span:after {
+            top: 12px; } }
+  .add-mimecast .torso.marketo.form .experience-container .loader {
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: calc(50% - 30px);
+    opacity: .5;
+    box-sizing: content-box;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border: 10px solid transparent;
+    border-top: 10px solid #fff;
+    border-radius: 50%;
+    animation: rota 1.5s infinite linear; }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container .loader {
+        -webkit-transition: all .25s ease-out;
+        transition: all .25s ease-out; } }
+    .add-mimecast .torso.marketo.form .experience-container .loader:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      margin: 0 auto;
+      border: 10px solid transparent;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4); }
+    .add-mimecast .torso.marketo.form .experience-container .loader.fade-opacity {
+      display: none; }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .loader.fade-opacity {
+          display: inherit;
+          opacity: 0;
+          width: 0;
+          height: 0;
+          margin: 0;
+          border: 0; }
+          .add-mimecast .torso.marketo.form .experience-container .loader.fade-opacity:after {
+            width: 0;
+            height: 0;
+            border: 0; } }
+  .add-mimecast .torso.marketo.form .experience-container .options-container {
+    position: relative;
+    z-index: 3;
+    left: 0; }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container .options-container {
+        top: 200px; } }
+    @media (min-width: 960px) {
+      .add-mimecast .torso.marketo.form .experience-container .options-container {
+        top: 200px; } }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container .options-container.transitions {
+        -webkit-transition: all .25s ease-out;
+        transition: all .25s ease-out; } }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container .options-container.slide-one {
+        left: -800px; } }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container .options-container.slide-two {
+        left: 1000px; } }
+    .add-mimecast .torso.marketo.form .experience-container .options-container.fade-opacity {
+      display: none; }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .options-container.fade-opacity {
+          display: inherit;
+          opacity: 0;
+          overflow: hidden; } }
+    .add-mimecast .torso.marketo.form .experience-container .options-container.option-selected .option .option-image {
+      cursor: default; }
+    .add-mimecast .torso.marketo.form .experience-container .options-container .option {
+      float: none;
+      width: 100%;
+      padding: 25px 0;
+      background-color: rgba(126, 37, 8, 0.85); }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option {
+          float: left;
+          width: 50%;
+          padding: 0;
+          background: none; } }
+      .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-image {
+        position: relative;
+        width: 126px;
+        height: 126px;
+        margin: 0 auto;
+        border: 6px solid white;
+        border-radius: 50%;
+        background-color: #fff;
+        background-size: cover;
+        box-shadow: 0 0 25px 0 #631404; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-image {
+            float: none;
+            width: 280px;
+            height: 280px;
+            border: 10px solid white;
+            cursor: pointer;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out; } }
+        @media (min-width: 960px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-image {
+            float: none;
+            width: 350px;
+            height: 350px;
+            border: 15px solid white; } }
+      .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-title {
+        position: relative;
+        display: table-cell;
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+        color: #fff;
+        font-family: 'Source Sans Pro', Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 900;
+        font-style: italic;
+        line-height: 1;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: none;
+        word-break: break-word; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-title {
+            display: block;
+            margin: 28px auto 0;
+            padding: 0;
+            font-size: 24px;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out; } }
+      .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer {
+        display: none;
+        overflow: hidden;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: calc(100% - 30px);
+        margin: 0 15px; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer {
+            position: absolute;
+            top: 0;
+            display: block;
+            opacity: 0;
+            width: 50%;
+            height: auto;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out; } }
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer h3 {
+          float: none;
+          font-family: 'Source Sans Pro Bold Italic', Arial, sans-serif;
+          font-size: 24px;
+          line-height: 1.3; }
+          @media (min-width: 480px) {
+            .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer h3 {
+              font-size: 26px; } }
+          @media (min-width: 768px) {
+            .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer h3 {
+              padding: 0 4px;
+              font-size: 30px;
+              line-height: 1.1;
+              text-shadow: 1px 1px 5px #441404; } }
+          @media (min-width: 960px) {
+            .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer h3 {
+              font-size: 40px; } }
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer p {
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          margin: 20px 0 0 0;
+          font-family: 'Source Sans Pro', Arial, sans-serif;
+          font-size: 17px;
+          line-height: 1.2; }
+          @media (min-width: 480px) {
+            .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer p {
+              line-height: 1.4; } }
+          @media (min-width: 768px) {
+            .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer p {
+              margin: 15px 0 0 0;
+              font-size: 17px;
+              text-shadow: 0 0 10px #441404; } }
+          @media (min-width: 960px) {
+            .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer p {
+              margin: 20px 0 0 0;
+              font-size: 18px; } }
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer p .btn {
+            display: block; }
+            @media (min-width: 768px) {
+              .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer p .btn {
+                display: inline-block; } }
+            @media (min-width: 768px) {
+              .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer p .btn.next {
+                margin: 10px 16px 0 0;
+                white-space: pre; } }
+            @media (min-width: 1010px) {
+              .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer p .btn.next {
+                margin: 0 16px 0 10px; } }
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer p .break {
+            display: none; }
+            @media (min-width: 768px) {
+              .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer p .break {
+                display: block; } }
+            @media (min-width: 1010px) {
+              .add-mimecast .torso.marketo.form .experience-container .options-container .option .option-answer p .break {
+                display: none; } }
+      .add-mimecast .torso.marketo.form .experience-container .options-container .option .mob-half {
+        display: table;
+        width: 50%;
+        height: 126px; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option .mob-half {
+            display: block;
+            float: none;
+            width: auto;
+            height: auto; } }
+      .add-mimecast .torso.marketo.form .experience-container .options-container .option .mob-left {
+        float: left; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option .mob-left {
+            float: none; } }
+      .add-mimecast .torso.marketo.form .experience-container .options-container .option .mob-right {
+        float: right; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option .mob-right {
+            float: none; } }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option:first-child .option-image {
+          left: 0; } }
+      .add-mimecast .torso.marketo.form .experience-container .options-container .option:first-child .option-title {
+        text-align: center; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option:first-child .option-title {
+            left: 0; } }
+      .add-mimecast .torso.marketo.form .experience-container .options-container .option:first-child .option-answer {
+        text-align: center; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option:first-child .option-answer {
+            left: -500px;
+            text-align: right; } }
+      .add-mimecast .torso.marketo.form .experience-container .options-container .option:last-child {
+        box-shadow: 0 0 20px 0 #631404; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option:last-child {
+            box-shadow: none; } }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .option:last-child .option-image {
+            right: 0; } }
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option:last-child .option-title {
+          text-align: center; }
+          @media (min-width: 768px) {
+            .add-mimecast .torso.marketo.form .experience-container .options-container .option:last-child .option-title {
+              right: 0; } }
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option:last-child .option-answer {
+          text-align: center; }
+          @media (min-width: 768px) {
+            .add-mimecast .torso.marketo.form .experience-container .options-container .option:last-child .option-answer {
+              right: -500px;
+              text-align: left; } }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option.selected:first-child .option-image,
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option.selected:first-child .option-title {
+          left: -500px;
+          opacity: 0; } }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option.selected:first-child .option-answer {
+          left: 0;
+          opacity: 1; } }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option.selected:last-child .option-image,
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option.selected:last-child .option-title {
+          right: -500px;
+          opacity: 0; } }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .options-container .option.selected:last-child .option-answer {
+          right: 0;
+          opacity: 1; } }
+    .add-mimecast .torso.marketo.form .experience-container .options-container.mob-answer {
+      margin: 0 !important; }
+      .add-mimecast .torso.marketo.form .experience-container .options-container.mob-answer article {
+        display: none; }
+        .add-mimecast .torso.marketo.form .experience-container .options-container.mob-answer article .mob-half {
+          display: none; }
+        .add-mimecast .torso.marketo.form .experience-container .options-container.mob-answer article.selected {
+          display: block;
+          padding: 25px 0 0;
+          background: none;
+          box-shadow: none; }
+          .add-mimecast .torso.marketo.form .experience-container .options-container.mob-answer article.selected .mob-half {
+            display: block;
+            float: none;
+            width: 100%;
+            height: auto;
+            margin: 0 0 20px 0; }
+          .add-mimecast .torso.marketo.form .experience-container .options-container.mob-answer article.selected .option-image {
+            display: block;
+            width: 170px;
+            height: 170px;
+            border: 10px solid white; }
+            @media (min-width: 768px) {
+              .add-mimecast .torso.marketo.form .experience-container .options-container.mob-answer article.selected .option-image {
+                display: block; } }
+          .add-mimecast .torso.marketo.form .experience-container .options-container.mob-answer article.selected .option-title {
+            display: none; }
+            @media (min-width: 768px) {
+              .add-mimecast .torso.marketo.form .experience-container .options-container.mob-answer article.selected .option-title {
+                display: block; } }
+          .add-mimecast .torso.marketo.form .experience-container .options-container.mob-answer article.selected .option-answer {
+            display: block;
+            opacity: 1;
+            overflow: auto;
+            height: auto; }
+            @media (min-width: 768px) {
+              .add-mimecast .torso.marketo.form .experience-container .options-container.mob-answer article.selected .option-answer {
+                display: block; } }
+    .add-mimecast .torso.marketo.form .experience-container .options-container .divider {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 34px;
+      height: 34px;
+      margin: -17px auto;
+      border-radius: 50%;
+      background-color: #f30;
+      font-family: 'Source Sans Pro Bold', Arial, sans-serif;
+      font-size: 15px;
+      line-height: 34px;
+      text-align: center;
+      vertical-align: middle; }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .options-container .divider {
+          position: absolute;
+          top: 130px;
+          right: 0;
+          left: 0;
+          overflow: hidden;
+          width: 60px;
+          height: 60px;
+          margin: 0 auto;
+          font-size: 21px;
+          line-height: 60px;
+          -webkit-transition: all .2s ease-out;
+          transition: all .2s ease-out;
+          transform: scale(60px); } }
+      @media (min-width: 960px) {
+        .add-mimecast .torso.marketo.form .experience-container .options-container .divider {
+          top: 157px; } }
+      .add-mimecast .torso.marketo.form .experience-container .options-container .divider.shrink {
+        display: none; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .options-container .divider.shrink {
+            display: block;
+            transform: scale(0); } }
+  .add-mimecast .torso.marketo.form .experience-container .results-container {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px; }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container .results-container {
+        position: absolute;
+        z-index: 2;
+        top: 185px;
+        left: 0;
+        opacity: 1;
+        float: none;
+        clear: both;
+        padding: 0;
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out; } }
+    .add-mimecast .torso.marketo.form .experience-container .results-container.fade-opacity {
+      display: none; }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .results-container.fade-opacity {
+          display: inherit;
+          opacity: 0;
+          height: auto; } }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container .results-container.slide-one {
+        left: -800px; } }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container .results-container.slide-two {
+        left: 1000px; } }
+    .add-mimecast .torso.marketo.form .experience-container .results-container h3 {
+      margin: 0 0 8px 0;
+      font-family: 'Source Sans Pro Bold Italic', Arial, sans-serif;
+      font-size: 22px;
+      line-height: 1.1;
+      text-align: center; }
+      @media (min-width: 480px) {
+        .add-mimecast .torso.marketo.form .experience-container .results-container h3 {
+          font-size: 28px; } }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .results-container h3 {
+          font-size: 40px;
+          line-height: 1;
+          text-shadow: 0 0 5px #441404; } }
+      @media (min-width: 960px) {
+        .add-mimecast .torso.marketo.form .experience-container .results-container h3 {
+          font-size: 48px; } }
+    .add-mimecast .torso.marketo.form .experience-container .results-container p {
+      font-family: 'Source Sans Pro', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.3;
+      text-align: center; }
+      @media (min-width: 480px) {
+        .add-mimecast .torso.marketo.form .experience-container .results-container p {
+          font-size: 17px; } }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .results-container p {
+          width: 80%;
+          margin: 15px auto 25px;
+          font-size: 18px;
+          text-shadow: 0 0 10px #441404; } }
+      @media (min-width: 960px) {
+        .add-mimecast .torso.marketo.form .experience-container .results-container p {
+          font-size: 20px; } }
+    .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container {
+      margin: 10px 0 0 0; }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container {
+          width: 100%;
+          margin: 0;
+          text-align: center; } }
+      .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn {
+            width: calc(33% - 20px);
+            margin: 0 10px;
+            font-size: 13px; } }
+        @media (min-width: 840px) {
+          .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn {
+            font-size: 14px; } }
+        @media (min-width: 920px) {
+          .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn {
+            max-width: 260px;
+            margin: 0 20px;
+            font-size: 16px; } }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn:first-child {
+            margin: 0 10px 0 0; } }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn:last-child {
+            margin: 0 0 0 10px; } }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn span:before {
+            top: 5px; } }
+        @media (min-width: 840px) {
+          .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn span:before {
+            top: 6px; } }
+        @media (min-width: 920px) {
+          .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn span:before {
+            top: 7px; } }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn span:after {
+            top: 9px; } }
+        @media (min-width: 840px) {
+          .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn span:after {
+            top: 10px; } }
+        @media (min-width: 920px) {
+          .add-mimecast .torso.marketo.form .experience-container .results-container .btn-container .btn span:after {
+            top: 12px; } }
+    .add-mimecast .torso.marketo.form .experience-container .results-container .share-container {
+      display: table;
+      width: auto;
+      margin: 10px auto 20px; }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .results-container .share-container {
+          margin: 30px auto; } }
+      .add-mimecast .torso.marketo.form .experience-container .results-container .share-container ul {
+        padding: 11px;
+        background: rgba(0, 0, 0, 0.4);
+        list-style: none;
+        text-align: center; }
+        .add-mimecast .torso.marketo.form .experience-container .results-container .share-container ul li {
+          display: inline-block;
+          width: auto;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          font-family: 'Source Sans Pro', Arial, sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 32px;
+          vertical-align: middle; }
+          @media (min-width: 768px) {
+            .add-mimecast .torso.marketo.form .experience-container .results-container .share-container ul li {
+              font-size: 16px; } }
+          .add-mimecast .torso.marketo.form .experience-container .results-container .share-container ul li:before {
+            content: '';
+            width: 0;
+            margin: 0; }
+          .add-mimecast .torso.marketo.form .experience-container .results-container .share-container ul li.share {
+            width: 32px;
+            height: 32px;
+            margin: 0 0 0 10px;
+            background-size: cover; }
+          .add-mimecast .torso.marketo.form .experience-container .results-container .share-container ul li.tw {
+            background-image: url(../img/share-twitter.png); }
+          .add-mimecast .torso.marketo.form .experience-container .results-container .share-container ul li.fb {
+            background-image: url(../img/share-facebook.png); }
+          .add-mimecast .torso.marketo.form .experience-container .results-container .share-container ul li.li {
+            background-image: url(../img/share-linkedin.png); }
+    .add-mimecast .torso.marketo.form .experience-container .results-container button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 0 0 2px 0;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 1px solid white;
+      border-left: 0;
+      border-radius: 0;
+      background: none;
+      line-height: 1;
+      text-align: center; }
+  .add-mimecast .torso.marketo.form .experience-container .question-counter {
+    width: auto;
+    margin: 18px auto;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .add-mimecast .torso.marketo.form .experience-container .question-counter {
+        position: absolute;
+        right: 0;
+        bottom: 40px;
+        left: 0;
+        margin: 0 auto;
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out; } }
+    .add-mimecast .torso.marketo.form .experience-container .question-counter.fade-opacity {
+      display: none; }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .question-counter.fade-opacity {
+          opacity: 0; } }
+    .add-mimecast .torso.marketo.form .experience-container .question-counter p {
+      position: relative;
+      display: inline;
+      width: auto;
+      margin: 0;
+      padding: 0;
+      font-family: 'Source Sans Pro Bold Italic', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1; }
+      @media (min-width: 768px) {
+        .add-mimecast .torso.marketo.form .experience-container .question-counter p {
+          font-size: 21px; } }
+      .add-mimecast .torso.marketo.form .experience-container .question-counter p:before, .add-mimecast .torso.marketo.form .experience-container .question-counter p:after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        width: 40px;
+        border-top: 1px solid #fff; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .question-counter p:before, .add-mimecast .torso.marketo.form .experience-container .question-counter p:after {
+            top: 13px;
+            width: 70px; } }
+      .add-mimecast .torso.marketo.form .experience-container .question-counter p:before {
+        left: -50px; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .question-counter p:before {
+            top: 13px;
+            left: -83px;
+            width: 70px; } }
+      .add-mimecast .torso.marketo.form .experience-container .question-counter p:after {
+        right: -50px; }
+        @media (min-width: 768px) {
+          .add-mimecast .torso.marketo.form .experience-container .question-counter p:after {
+            top: 13px;
+            right: -83px;
+            width: 70px; } }
+  .add-mimecast .torso.marketo.form .experience-container.experience-started .experience-title,
+  .add-mimecast .torso.marketo.form .experience-container.experience-started .experience-subtitle {
+    display: none; }
+  .add-mimecast .torso.marketo.form .experience-container.experience-started .options-container {
+    margin: 100px 0 0 0; }
+  .add-mimecast .torso.marketo.form .experience-container.experience-started .results-container {
+    margin: 25px 0; }

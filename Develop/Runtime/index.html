@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<head>
+	<meta charset="utf-8">
+	<title>Mimecast</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="57x57" href="//www.mimecast.com/marketo/v3/assets/img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="//www.mimecast.com/marketo/v3/assets/img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="//www.mimecast.com/marketo/v3/assets/img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="//www.mimecast.com/marketo/v3/assets/img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="//www.mimecast.com/marketo/v3/assets/img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="//www.mimecast.com/marketo/v3/assets/img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="//www.mimecast.com/marketo/v3/assets/img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="//www.mimecast.com/marketo/v3/assets/img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="//www.mimecast.com/marketo/v3/assets/img/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="//www.mimecast.com/marketo/v3/assets/img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="//www.mimecast.com/marketo/v3/assets/img/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="//www.mimecast.com/marketo/v3/assets/img/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="//www.mimecast.com/marketo/v3/assets/img/favicons/favicon-16x16.png" sizes="16x16">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="robots" content="index, nofollow">
+
+	<meta name="description" content="Mimecast | What have you had enough of? Pick what annoys you most and learn how Mimecast can help make email safer for business.">
+	<meta name="author" content="mimecast">
+
+	<link rel="stylesheet" href="http://addmimecast.com/css/mktLPSupportCompat.css" media="all">
+	<link rel="stylesheet" href="//www.mimecast.com/marketo/v3/assets/css/styles.css" media="all">
+
+	<style>
+	#menu-icon,
+	.mm-first {
+		display: none;
+	}
+	
+	/* .top-banner {
+		background-image: url(http://www.mimecast.com/marketo/campaign/img/bgr.jpg);
+		background-size: 100% auto;
+	} */
+	
+	.landing p {
+		margin-bottom: 20px;
+	}
+	
+	#bodyText {
+		width: 50%;
+		float: left;
+	}
+
+	ul.slick-dots {
+		margin-left: 0;
+	}
+
+	.top-banner .header-image {
+		float: right;
+		width: 49%;
+	}
+
+	.top-banner .header-image img {
+		margin-bottom: -140px;
+	}
+
+	.grid.three > div img {
+		width: inherit !important;
+	}
+
+	#Section1 {
+		display: block;
+	}
+
+	#Section2 {
+		display: block;
+	}
+
+	#Section3 {
+		display: block;
+	}
+
+	#FooterSection {
+		display: block;
+		background-color: #678095;
+		background-image: url(http://www.mimecast.com/marketo/campaign/img/slider-bg.png);
+	}
+
+	.torso.marketo.form section,
+	.torso.marketo.form section.feature,
+	.torso.marketo.form section.feature.alt {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 17%;
+	}
+
+	section,
+	section h3,
+	section .grid,
+	.guided {
+		color: #fff;
+	}
+
+	body .guided,
+	body .guided .main {
+		background-color: #fff;
+	}
+
+	body .guided .main {
+		margin-top: 0;
+	}
+
+	.guided h1 {
+		color: #fff;
+		text-align: center;
+	}
+
+	.bt-shadow {
+		box-shadow: inset 0px -20px 33px -5px rgba(68, 68, 68, 1);
+		padding-bottom: 40px;
+	}
+	</style>
+	<script src="//www.mimecast.com/marketo/campaign/js/jquery-2.1.4.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		setRegionContent();
+
+	});
+
+	function setRegionContent() {
+		$.ajax({
+			url: "https://www.mimecast.com/microsites/marketo/camp-1/",
+			type: "GET",
+			dataType: "jsonp",
+			callback: 'showContent'
+		});
+	}
+
+	function showContent(resultData) {
+		if (resultData != null && resultData != "") {
+			$('a.phone-no-text').attr('href', 'tel:' + resultData);
+			$('a.phone-no-text').html(resultData);
+		}
+	}
+	</script>
+	<style>
+	.mktoGen.mktoImg {
+		display: inline-block;
+		line-height: 0;
+	}
+	</style>
+	
+	<link rel="stylesheet" href="css/screen.min.css?793afbff" media="all">
+</head>
+
+<body id="bodyId">
+
+	<div class="wrapper guided add-mimecast">
+		<div class="torso marketo form">
+			<!-- <div class="hero">
+				<ul id="mobile-menu" class="no-style mm-first">
+					<li><a href="//www.mimecast.com">Home</a></li>
+					<li><a href="//www.mimecast.com/solutions/" target="_blank">Solutions</a></li>
+					<li><a href="//www.mimecast.com/products/" target="_blank">Products</a></li>
+					<li><a href="//www.mimecast.com/partners/" target="_blank">Partners</a></li>
+					<li><a href="//www.mimecast.com/resources/" target="_blank">Resources</a></li>
+					<li><a href="//www.mimecast.com/customer-success/" target="_blank">Customer Success</a></li>
+					<li><a href="//www.mimecast.com/company/news-coverage/" target="_blank">News &amp; Events</a></li>
+					<li><a href="//www.mimecast.com/company/" target="_blank">Company</a></li>
+					<li><a href="//www.mimecast.com/blog/" target="_blank">Blog</a></li>
+					<li><a href="//www.mimecast.com/company/contact/" target="_blank">Contact Us</a></li>
+					<li><a href="//www.mimecast.com/login/" target="_blank">Login</a></li>
+				</ul>
+				<div id="menu-icon" class="mobile menu"></div>
+				<div class="container">
+					<div class="logo">
+						<img src="//www.mimecast.com/content/img/logo-mimecast.png" alt="">
+					</div>
+				</div>
+			</div> -->
+			<div class="main" rel="main">
+				<div class="top-banner">
+					<div class="container">
+
+					<!-- ////////////// experience start ////////////// -->
+					<section class="experience-container" id="experience">
+						<h1 class="experience-title">What have you had enough of?</h1>
+						<h2 class="experience-subtitle">Pick what annoys you most and learn how Mimecast can help make email safer for business.</h2>
+						
+						<div class="loader" id="load"></div>
+
+						<!-- question start -->
+						<div class="options-container transitions fade-opacity" id="experience-options">
+							<article class="option one">
+								<!-- question -->
+								<div class="mob-left mob-half">
+									<div class="option-image" id="image-one" style="background-image: url(/img/test.png)"></div>
+								</div>
+								<div class="mob-right mob-half">
+									<h3 class="option-title" id="title-one"></h3>
+								</div>
+
+								<!-- answer -->
+								<div class="option-answer">
+									<h3 id="answer-one-title"></h3>
+									<p id="answer-one-body"></p>
+									<p>
+										<a class="btn other" target="_blank"><span id="answer-one-type"></span></a>
+										<span class="break"></span>
+										<a class="btn next">NEXT MATCHUP</a>
+									</p>
+								</div>
+
+								<div class="clear"></div>
+							</article>
+							<div class="divider">OR</div>
+							<article class="option two">
+								<!-- question -->
+								<div class="mob-right mob-half">
+									<div class="option-image" id="image-two" style="background-image: url(/img/test.png)"></div>
+								</div>
+								<div class="mob-left mob-half">
+									<h3 class="option-title" id="title-two"></h3>
+								</div>
+
+								<!-- answer -->
+								<div class="option-answer">
+									<h3 id="answer-two-title"></h3>
+									<p id="answer-two-body"></p>
+									<p>
+										<a class="btn other" target="_blank"><span id="answer-two-type"></span></a>
+										<span class="break"></span>
+										<a class="btn next">NEXT MATCHUP</a>
+									</p>
+								</div>
+
+								<div class="clear"></div>
+							</article>
+						</div>
+						<!-- question end -->
+
+						<!-- result start -->
+						<div class="results-container fade-opacity slide-two" id="experience-results">
+							<article>
+								<h3 id="result-title"></h3>
+								<p id="result-body"></p>
+								<div class="btn-container">
+									<a class="btn other" href="https://www.mimecast.com/products/email-security/targeted-threat-protection/" target="_blank">EMAIL SECURITY SOLUTIONS <span></span></a>
+									<a class="btn other" href="https://www.mimecast.com/products/email-archiving/" target="_blank">ARCHIVING SOLUTIONS <span></span></a>
+									<a class="btn other" href="https://www.mimecast.com/products/platform-selection/office-365/" target="_blank">OFFICE 365 SOLUTIONS <span></span></a>
+								</div>
+								<button type="button" id="restart">PLAY AGAIN</button>
+							</article>
+						</div>
+						<!-- result end -->
+
+						<div class="question-counter" id="counter">
+							<p><span id="current-question">1</span> <span class="of">of</span> 7</p>
+						</div>
+						
+					</section>
+					<!-- ////////////// experience end ////////////// -->
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="draws">
+					<section id="Section1">
+						<div class="container">
+							<div class="draw">
+								<div class="title">Improve Cyber Resilience</div>
+								<div class="open-title">Improve Cyber Resilience</div>
+								<div class="desc">The journey to the cloud doesn’t have to be risky. You just need to cover all your bases from security to continuity, compliance and end-user enablement.</div>
+								<div class="arrow">
+									<a href="#Section1" class="bt-lm" title="Click here to learn more">Learn More</a>
+								</div>
+							</div>
+							<div class="mktoText expand-copy" id="SectionCopy1">
+								<div class="grid two">
+									<div>
+										<p class="p1"><span class="s1">Mimecast&rsquo;s cloud-based suite of email security, archiving and continuity services provides the control you need to make email safer for business. We:</span></p>
+										<ul>
+											<li>Empower customers with greater visibility and control over their email security.</li>
+											<li>Enable easy migration of data to the cloud and quick access to vital corporate information.</li>
+											<li>Provide an always-on approach that safeguards against new and emerging email-borne attacks, human error and downtime.</li>
+											<li>Take the risk out of Office 365 migrations with a complementary, layered cloud service that defends against cyberattacks, downtime and data loss.</li>
+										</ul>
+									</div>
+									<div>
+										<div class="modules">
+											<div class="module">
+												<img src="http://info.mimecast.com/rs/336-TAU-594/images/CyberResilience_icon.png" />
+												<div class="module-copy">Cyber resilience requires strong email management tools</div>
+												<a class="cta" href="https://www.mimecast.com/content/cyber-resilience/" target="_blank">Read more</a>
+											</div>
+											<div class="grid-sep"><br /></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</section>
+					<section id="Section2">
+						<div class="container">
+							<div class="draw">
+								<div class="title">Fight Ransomware</div>
+								<div class="open-title">Fight Ransomware</div>
+								<div class="desc">A ransomware attack could cost you thousands, cripple productivity and customer service during the downtime.</div>
+								<div class="arrow">
+									<a href="#Section2" class="bt-lm" title="Click here to learn more">Learn More</a>
+								</div>
+							</div>
+							<div class="mktoText expand-copy" id="SectionCopy2">
+								<div class="grid two">
+									<div>
+										<div>
+											Unlike individual vendors of email security or backup products, Mimecast helps fight ransomware with a single cloud solution that brings together <b>security, continuity and email replication capabilities</b>.
+											<ul>
+												<li>Integrated service defending against email-borne ransomware attacks and outages impacting email up-time.</li>
+												<li>100% cloud-based solution.</li>
+												<li>100% service availability SLA.</li>
+											</ul>
+										</div>
+									</div>
+									<div>
+										<div class="modules">
+											<div class="module">
+												<img src="http://www.mimecast.com/marketo/campaign/img/infographic.jpg" />
+												<div class="module-copy">Never Be a Ransomware Hostage</div>
+												<a class="cta" href="https://www.mimecast.com/resources/infographics/Dates/2016/10/never-be-a-ransomware-hostage/" target="_blank">Read more</a>
+											</div>
+											<div class="grid-sep"><br /></div>
+											<div class="module">
+												<img src="http://www.mimecast.com/marketo/campaign/img/video2.jpg" />
+												<div class="module-copy">Ransomware security interview with Mimecast Co-founder and CTO, Neil Murray.</div>
+												<a class="cta" href="https://www.mimecast.com/solutions/email-security/ransomware/" target="_blank">Watch now</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</section>
+					<section id="Section3">
+						<div class="container">
+							<div class="draw">
+								<div class="title">Block Internal Email Threats</div>
+								<div class="open-title">Block Internal Email Threats</div>
+								<div class="desc">Threats don’t just come from the outside. They can enter your organization in multiple ways and can quickly spread via email.</div>
+								<div class="arrow">
+									<a href="#Section3" class="bt-lm" title="Click here to learn more">Learn More</a>
+								</div>
+							</div>
+							<div class="mktoText expand-copy" id="SectionCopy3">
+								<div class="grid two">
+									<div>
+										<div>
+											Mimecast Internal Email Protect allows you to detect and remediate threats in your internal email. This first-to-market cloud service includes the scanning of attachments and URLs.
+											<ul>
+												<li>Single cloud solution to inspect email coming into, going out of, and staying within an organization.</li>
+												<li>Detection of lateral movement of attacks via email from one internal user to another.</li>
+												<li>Identification of threats or sensitive data leaving an organization.</li>
+												<li>Automated removal of internal emails which are determined to contain threats.</li>
+											</ul>
+										</div>
+									</div>
+									<div>
+										<div class="modules">
+											<div class="module">
+												<img src="https://www.mimecast.com/marketo/campaign/img/datasheet.jpg" />
+												<div class="module-copy">Mimecast Targeted Threat Protection &ndash; Internal Email Protect</div>
+												<a class="cta" href="https://www.mimecast.com/resources/datasheets/Dates/2017/2/internal-email-protect/" target="_blank">Read more</a>
+											</div>
+											<div class="grid-sep"><br /></div>
+											<div class="module"><img src="http://www.mimecast.com/marketo/campaign/img/datasheet.jpg" />
+												<div class="module-copy">Mimecast S1 - Advanced Threat Security</div>
+												<a class="cta" href="https://www.mimecast.com/resources/datasheets/Dates/2016/6/s1-datasheet/" target="_blank">Read more</a>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</section>
+					<div class="clearfix"></div>
+				</div>
+				<section id="FooterSection">
+					<div class="container">
+						<div class="mktoText" id="FooterSectionCopy">
+							<h2 style="color: #fff;">ABOUT MIMECAST</h2>
+							<div class="grid two">
+								<div>
+									<h4 style="color: #fff;">Mimecast makes business email and data safer for more than 21,800 customers and their millions of employees worldwide. Founded in 2003, the company&rsquo;s next-generation cloud-based security, archiving and continuity services protect email and deliver comprehensive email risk management in a single, fully-integrated subscription service.</h4>
+									<!--
+									<p>Mimecast reduces email risk and the complexity and cost of managing the array of point solutions traditionally used to protect email and its data. For customers that have migrated to cloud services like Microsoft Office 365TM, Mimecast mitigates single vendor exposure by strengthening security coverage, combating downtime and improving archiving.</p>
+									<p>Mimecast Email Security protects against malware, spam, advanced phishing and other emerging attacks, while preventing data leaks. Mimecast Mailbox Continuity enables employees to continue using email during planned and unplanned outages.</p>
+									<p>Mimecast Enterprise Information Archiving unifies email, file and instant messaging data to support e-discovery and give employees fast access to their personal archive via PC, Mac and mobile apps.</p>
+									-->
+								</div>
+								<div>
+									<div class="vidyardWrapper">
+										<script type="text/javascript" id="vidyard_embed_code_RW3MwNaEZRm7pR9fVmCf6Q" src="//play.vidyard.com/RW3MwNaEZRm7pR9fVmCf6Q.js?v=3.1.1&amp;type=inline"></script>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<footer class="primary">
+				<!-- Footer -->
+				<div class="secondary">
+					<div class="container">
+						<div class="flex">
+							<div class="region">
+								<span><i class="fa fa-location-arrow"></i></span>
+								<span class="sales-no">SALES: </span>
+								<a class="phone-no-text" href="tel:+971569467505">+971 56 946 7505</a>
+							</div>
+							<a href="javascript:Chat();" class="btn chat">Chat with sales <i class="chat-with-sales-icon"></i></a>
+							<a href="//www.mimecast.com/demo/?nav=true" class="btn demo">Schedule a demo <i class="demo-icon"></i></a>
+							<a href="//www.mimecast.com/get-a-quote/" class="btn quote">Get a Quote</a>
+						</div>
+					</div>
+				</div>
+				<div class="primary">
+					<div class="container">
+						<div class="links grid five">
+							<div>
+								<a href="//www.mimecast.com/solutions" data-di-id="di-id-47020500-98f623ec">Solutions</a>
+								<ul class="no-style">
+									<li><a href="//www.mimecast.com/solutions/email-security/" data-di-id="di-id-5348607-f4bcdaa3">Email Security</a></li>
+									<li><a href="//www.mimecast.com/solutions/email-resiliency/" data-di-id="di-id-b0dac6d4-2dbd3d6f">Email Resiliency</a></li>
+									<li><a href="//www.mimecast.com/solutions/platforms/" data-di-id="di-id-da2e3826-2d49e4e5">Platforms</a></li>
+								</ul>
+							</div>
+							<div>
+								<a href="//www.mimecast.com/products" data-di-id="di-id-47020500-a3e78584">Products</a>
+								<ul class="no-style">
+									<li><a href="//www.mimecast.com/products/email-security/" data-di-id="di-id-5348607-1b70fd15">Email Security</a></li>
+									<li><a href="//www.mimecast.com/products/email-continuity/" data-di-id="di-id-b0dac6d4-2972fe9e">Email Continuity</a></li>
+									<li><a href="//www.mimecast.com/products/email-archiving/" data-di-id="di-id-5348607-b36f4cea">Email Archiving</a></li>
+									<li><a href="//www.mimecast.com/products/product-bundles/" data-di-id="di-id-5348607-34b498af">Product Bundles</a></li>
+									<li><a href="//www.mimecast.com/products/platform-selection/" data-di-id="di-id-1065caec-b5bebbe3">Platform selection</a></li>
+								</ul>
+							</div>
+							<div>
+								<a href="//www.mimecast.com/resources/" data-di-id="di-id-1324f023-2526616b">Resources</a>
+								<ul class="no-style">
+									<li><a href="//www.mimecast.com/resources/security/" data-di-id="di-id-41ea8673-366d5140">Security</a></li>
+									<li><a href="//www.mimecast.com/resources/archiving/" data-di-id="di-id-da2e3826-c2969113">Archiving</a></li>
+									<li><a href="//www.mimecast.com/resources/continuity/" data-di-id="di-id-da2e3826-3c35c769">Continuity</a></li>
+									<li><a href="//www.mimecast.com/resources/migration/" data-di-id="di-id-da2e3826-7e5c9b2e">Migration</a></li>
+									<li><a href="//www.mimecast.com/resources/productivity/" data-di-id="di-id-3bbb6480-853cd03a">Productivity</a></li>
+									<li><a href="//www.mimecast.com/resources/o365" data-di-id="di-id-9791c504-fc908e9">Office 365</a></li>
+								</ul>
+							</div>
+							<div>
+								<a href="//www.mimecast.com/blog/" data-di-id="di-id-7f048e63-d996d4f2">Blog</a>
+								<a href="//www.mimecast.com/company/news-coverage/" data-di-id="di-id-90196475-9094c316">News &amp; Events</a>
+								<a href="//www.mimecast.com/customer-success/" data-di-id="di-id-55e7b0ae-51fa8a5a">Customer Success</a>
+								<ul class="no-style">
+									<li><a target="_blank" href="https://community.mimecast.com/" data-di-id="di-id-c3f4c2f4-7e377f30">Mimecaster Central</a></li>
+									<li><a href="//www.mimecast.com/customer-success/technical-support/" data-di-id="di-id-b85abd64-f57d850">Technical Support</a></li>
+									<li><a href="//www.mimecast.com/customer-success/professional-services/" data-di-id="di-id-4a10c26d-37b08415">Professional Services</a></li>
+									<li><a href="//www.mimecast.com/customer-success/training/" data-di-id="di-id-b0dac6d4-9b4b9cd4">Training</a></li>
+								</ul>
+							</div>
+							<div>
+								<a href="//www.mimecast.com/partners/" data-di-id="di-id-47020500-5cbce47d">Partners</a>
+								<a href="//www.mimecast.com/company" data-di-id="di-id-bfa00fe8-133146a3">Company</a>
+								<ul class="no-style">
+									<li><a href="//www.mimecast.com/company/about-us/" data-di-id="di-id-e19663ad-774f43c9">About Us</a></li>
+									<li><a href="//www.mimecast.com/company/leadership/" data-di-id="di-id-41ea8673-deeda746">Leadership Team</a></li>
+									<li><a target="_blank" href="http://investors.mimecast.com/" data-di-id="di-id-f72625b7-15a91cce">Investor Relations</a></li>
+									<li><a href="//www.mimecast.com/company/careers/" data-di-id="di-id-e19663ad-bd11687a">Careers</a></li>
+									<li><a href="//www.mimecast.com/company/awards/" data-di-id="di-id-9791c504-97029c85">Awards</a></li>
+									<li><a href="//www.mimecast.com/company/mimecast-trust-center/" data-di-id="di-id-c5a53404-55d1484d">Trust Center</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="utility">
+							<ul class="no-style">
+								<li style="font-weight:300;color:#888;">© 2017 Mimecast.com All rights reserved.</li>
+								<li><a href="//www.mimecast.com/privacy-policy/" data-di-id="di-id-641043aa-ab263787">Privacy</a></li>
+								<li><a href="//www.mimecast.com/company-registration-details/" data-di-id="di-id-75b5ffae-8a79b48c">Registration Details</a></li>
+								<li><a href="//www.mimecast.com/acceptable-use/" data-di-id="di-id-641043aa-53a4c2bd">Acceptable Use</a></li>
+								<li><a href="//www.mimecast.com/terms-of-use/" data-di-id="di-id-74811a01-ca899f28">Terms of Use</a></li>
+								<li><a href="//www.mimecast.com/Documents/information_security_policy.pdf" data-di-id="di-id-95ffb81b-74dfab22">Information Security Policy</a></li>
+								<li><a href="//www.mimecast.com/responsible-disclosure/" data-di-id="di-id-8252c128-904dea46">Responsible Disclosure</a></li>
+								<li><a href="//www.mimecast.com/sitemap" data-di-id="di-id-3f05ee9d-caf2b0db">Sitemap</a></li>
+							</ul>
+						</div>
+						<div class="partners">
+							<img src="//www.mimecast.com/assets/img/partner-logos-2016.png" alt="partners logo">
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+		</div>
+		
+		<!-- Google Tag Manager -->
+		<noscript>
+				<iframe src="//www.googletagmanager.com/ns.html?id=GTM-P426B3" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<script>
+		(function(w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+						'gtm.start': new Date().getTime(),
+						event: 'gtm.js'
+				});
+				var f = d.getElementsByTagName(s)[0],
+						j = d.createElement(s),
+						dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src =
+						'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-P426B3');
+		</script>
+		<!-- End Google Tag Manager -->
+		<link rel="stylesheet" type="text/css" href="//www.mimecast.com/marketo/v3/assets/css/base.css?v=1.0" media="all">
+		<style>
+		#menu-icon {
+				background-image: url(https://www.mimecast.com/marketo/campaign/img/menu-mobile-blue.png);
+		}
+		
+		#livechat-compact-container {
+				display: none;
+		}
+		</style>
+		<script src="//play.vidyard.com/v0/api.js"></script>
+		<script src="//www.mimecast.com/assets/js/lib/slick.js"></script>
+		<script src="//www.mimecast.com/marketo/campaign/js/base-guided.js"></script>
+		<script>
+		var sfjq$ = $; // SF
+		</script>
+		<script language="javascript" type="text/javascript" src="//d12ulf131zb0yj.cloudfront.net/SmartForms3-0/SmartForms.js"></script>
+		<script type="text/javascript">
+		// $(function() {
+		// 	$('.slides').slick({
+		// 		dots: true,
+		// 		speed: 500
+		// 	});
+		// });
+
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1898620-6']);
+		_gaq.push(['_setDomainName', 'addmimecast.com']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackPageLoadTime']);
+		_gaq.push(['_setAllowLinker', true]);
+		(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+		<script>
+		// function for mkto cookie
+		function getCookie(cname) {
+				var name = cname + "=";
+				var ca = document.cookie.split(';');
+				for (var i = 0; i < ca.length; i++) {
+						var c = ca[i];
+						while (c.charAt(0) == ' ') {
+								c = c.substring(1);
+						}
+						if (c.indexOf(name) == 0) {
+								return c.substring(name.length, c.length);
+						}
+				}
+				return "";
+		}
+		</script>
+		<!-- Start of LiveChat (www.livechatinc.com) code -->
+		<script type="text/javascript">
+		window.__lc = window.__lc || {};
+		window.__lc.license = 7096611;
+		window.__lc.params = [{
+				name: 'mkto',
+				value: getCookie('_mkto_trk')
+		}];
+		(function() {
+				var lc = document.createElement('script');
+				lc.type = 'text/javascript';
+				lc.async = true;
+				lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(lc, s);
+
+		})();
+
+		function Chat() {
+				if ($('a.btn.chat').hasClass('filled')) {
+						LC_API.minimize_chat_window();
+						$('a.btn.chat').removeClass('filled')
+				} else {
+						LC_API.open_chat_window();
+						$('a.btn.chat').addClass('filled')
+						_gaq.push(['_trackEvent', 'Conversion', 'Live Chat', window.location.toString().split("?")[0], 1]);
+				}
+		}
+		</script>
+		<!-- End of LiveChat code -->
+		<script src="//www.mimecast.com/marketo/responsive/js/mcv2-form.js"></script>
+	</div>
+
+
+	<script type="text/javascript" src="//munchkin.marketo.net//munchkin.js"></script>
+	<script>
+	Munchkin.init('336-TAU-594', {
+			customName: 'addmimecast',
+			wsInfo: 'j1RR'
+	});
+	</script>
+
+	<script src="js/app.min.js?af1404bf"></script>
+</body>
+</html>
